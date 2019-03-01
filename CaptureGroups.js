@@ -10,4 +10,11 @@ let repeatWord = "Salad Salad Salad";
 let repeatRegex = /(\w+)\s\1\s\1/;
 let regexTest = repeatRegex.test(repeatWord);
 let regexMatch = repeatWord.match(repeatRegex);
-console.log(regexMatch);
+// console.log(regexMatch);
+
+let foodText = "Where is the lamb sauce?!";
+let foodRegex = /lamb/;
+let foodReplace = "fish"
+let foodResult = foodText.replace(foodRegex, foodReplace);
+console.log(foodText);
+console.log(foodResult);
